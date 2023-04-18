@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style></style>
+  <body>
+    <div id="wrapper">
+      <h1 style="color: antiquewhite; font: bold">Password Generater</h1>
+
+      <div id="container">
+        <!-- <div>
+          <small style="font-size: 16px"
+            >Create Password with help of Name and date of Birth</small
+          >
+          <button id="showNameNDate">Click Here</button>
+        </div>
+        <div id="nameContainer">
+          <div style="display: flex; align-items: center">
+            <label style="font-size: 12px; margin-right: 15px">Name</label>
+
+            <input type="text" id="inputName" placeholder="Name" />
+          </div>
+
+          <div style="display: flex; align-items: center">
+            <label style="font-size: 12px; margin-right: 15px">DOB</label>
+            <input type="date" id="inputDate" />
+          </div>
+        </div> -->
+        <div>
+          <div id="passView">
+            <input
+              id="passwordDisplay"
+              type="text"
+              placeholder="Password"
+              style="width: 250px; height: 5vh"
+            />
+            <button id="copyBtn">
+              <span id="dataCopyMsg"></span>
+              <i class="fa fa-copy"></i>
+            </button>
+          </div>
+        </div>
+        <div id="mainContent">
+          <!-- password length  -->
+          <div class="password-length">
+            <h4>Password length</h4>
+            <h3 id="lengthDisplay" style="color: rgb(255, 255, 45)">2</h3>
+          </div>
+
+          <!-- slider -->
+          <div class="slidecontainer">
+            <input type="range" min="1" max="20" id="slidecontainer" />
+          </div>
+
+          <!-- checkbox -->
+          <div>
+            <input type="checkbox" id="upperCase" />
+            <label for="">Include upper case</label>
+          </div>
+          <div>
+            <input type="checkbox" id="lowerCase" />
+            <label for="">Include Lower case</label>
+          </div>
+          <div>
+            <input type="checkbox" id="number" />
+            <label for="">Include numbers</label>
+          </div>
+          <div>
+            <input type="checkbox" id="symbol" />
+            <label for="">Include Symbol</label>
+          </div>
+          <div class="strength">
+            <h6>Strength</h6>
+            <div id="dataIndicator"></div>
+          </div>
+        </div>
+        <!-- Button -->
+        <button class="generateButton">Generate Password</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
